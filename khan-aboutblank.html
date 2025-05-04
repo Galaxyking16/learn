@@ -19,6 +19,10 @@ That means that you won't be able to backup your world.
         newWindow.document.open()
         newWindow.document.write()
         newWindow.document.close()
+        newWindow.document.body.style.margin = "0"
+        newWindow.document.body.style.padding = "0"
+        newWindow.document.documentElement.style.margin = "0";
+        newWindow.document.documentElement.style.padding = "0";
         var iframe = newWindow.document.createElement('iframe');
         iframe.style.width = '100%';
         iframe.style.height = '100%';
